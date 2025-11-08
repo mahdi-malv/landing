@@ -4,110 +4,200 @@ import ProjectCard from '../components/ProjectCard.astro';
 import projects from '../data/projects.json';
 ---
 
-<Layout title="Mahdi Malvandi - Software Developer">
-  <main class="main-wrapper">
-    <header>
-      <h1>Mahdi Malvandi</h1>
-      <p>Software Developer</p>
-    </header>
+<Layout title="Mahdi Malvandi - Android Software Developer">
+  <div class="hero-section">
+    <div class="hero-content">
+      <header>
+        <h1>Mahdi Malvandi</h1>
+        <p>Android Software Developer</p>
+      </header>
+      
+      <section class="bio">
+        <p>Hi. I'm Mahdi Malvandi, software developer living in Copenhagen, Denmark. I've been focusing on Android applications throughout the recent years.</p>
+      </section>
+      
+      <section class="contact">
+        <div class="contact-links">
+          <a href="mailto:hi@mahdi-malv.com">Email</a>
+          <a href="https://linkedin.com/in/mahdi-malv" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/mahdi-malv" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
+    </div>
     
-    <section class="bio">
-      <p>Hi. I'm Mahdi Malvandi, software developer living in Copenhagen, Denmark. I've been focusing on Android applications throughout the recent years.</p>
-    </section>
-    
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard project={project} />
-        ))}
-      </div>
-    </section>
-    
-    <section class="contact">
-      <h2>Contact</h2>
-      <div class="contact-links">
-        <a href="mailto:hi@mahdi-malv.com">Email</a>
-        <!-- LinkedIn link can be added here later -->
-      </div>
-    </section>
-  </main>
+    <!-- Scroll indicator arrow -->
+    <div class="scroll-indicator">
+      <button class="scroll-arrow" onclick="document.querySelector('.projects-section').scrollIntoView({behavior: 'smooth'})" aria-label="Scroll to projects">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+  <div class="gradient-separator"></div>
+  
+  <div class="projects-section">
+    <div class="projects-content">
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+          {projects.map((project) => (
+            <ProjectCard project={project} />
+          ))}
+        </div>
+      </section>
+    </div>
+  </div>
 </Layout>
 
 <style>
-  /* Main wrapper styling is now handled in Layout.astro */
-  
+  /* Hero section styles */
   header {
-    text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0 0 0.5rem 0;
-    color: #1f2937;
+    color: white;
+    font-weight: 700;
   }
   
   header p {
-    font-size: 1.2rem;
-    color: #6b7280;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
     margin: 0;
+    font-weight: 400;
   }
   
   .bio {
-    margin-bottom: 3rem;
+    margin: 2rem 0;
   }
   
   .bio p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.7;
-    color: #4b5563;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
   }
   
-  .projects {
-    margin: 3rem 0;
-  }
-  
-  .projects h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #1f2937;
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-  
+  /* Contact links in hero */
   .contact {
-    margin-top: 3rem;
-  }
-  
-  .contact h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #1f2937;
+    margin-top: 2rem;
   }
   
   .contact-links {
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
   }
   
   .contact-links a {
-    color: #3b82f6;
+    color: white;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem 1rem;
-    border: 1px solid #3b82f6;
-    border-radius: 0.375rem;
-    transition: all 0.2s ease;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
   }
   
   .contact-links a:hover {
-    background-color: #3b82f6;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+  }
+
+  /* Scroll indicator arrow */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .scroll-arrow {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+  }
+
+  .scroll-arrow:hover {
     color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .scroll-arrow:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 4px;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-8px);
+    }
+    60% {
+      transform: translateY(-4px);
+    }
+  }
+  
+  /* Projects section styles */
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    .bio p {
+      font-size: 1.1rem;
+    }
+    
+    .contact-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .projects h2 {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    
+    .scroll-indicator {
+      bottom: 1.5rem;
+    }
+    
+    .scroll-arrow {
+      padding: 0.75rem;
+    }
   }
 </style>

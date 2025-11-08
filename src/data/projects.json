@@ -3,30 +3,40 @@
     "title": "Snevagten",
     "description": "Android (and iOS) application for Snow removal partners of Snevagten operating in Denmark.",
     "imageUrl": "/images/snevagten-logo.png",
-    "link": "https://play.google.com/store/apps/details?id=dk.snevagten.mobile&hl=en"
+    "linkText": "View on Play Store",
+    "linkUrl": "https://play.google.com/store/apps/details?id=dk.snevagten.mobile&hl=en",
+    "tags": ["android", "ios", "KMP", "compose"]
   },
   {
     "title": "OK",
     "description": "OK App. The main application for the OK, Tank or betale platform.",
     "imageUrl": "/images/ok-logo.png",
-    "link": "https://play.google.com/store/apps/details?id=dk.ok.android.findtank&hl=en"
+    "linkText": "View on Play Store",
+    "linkUrl": "https://play.google.com/store/apps/details?id=dk.ok.android.findtank&hl=en",
+    "tags": ["android", "kotlin", "compose"]
   },
   {
     "title": "coto",
     "description": "coto provides live streaming led real-time consultations in Tarot, Astrology, relationships, mental health, emotional wellness, and Energy-based healing, creating a safe and supportive space for individuals, especially women, to find immediate and long-term support.",
     "imageUrl": "/images/coto-logo.png",
-    "link": "https://play.google.com/store/apps/details?id=world.eve.coto&hl=en"
+    "linkText": "View on Play Store",
+    "linkUrl": "https://play.google.com/store/apps/details?id=world.eve.coto&hl=en",
+    "tags": ["android", "compose"]
   },
   {
     "title": "TapsellPlus SDK",
-    "description": "Tapsell ",
+    "description": "Tapsell advertising SDK for mobile applications.",
     "imageUrl": "/images/tapsell-logo.png",
-    "link": "https://tapsell.com/"
+    "linkText": "Visit Tapsell",
+    "linkUrl": "https://tapsell.com/",
+    "tags": ["sdk", "android", "flutter", "reactNative", "unity", "b4a"]
   },
   {
     "title": "Pushe SDK",
     "description": "Pushe notification service for Android and iOS.",
     "imageUrl": "/images/pushe-logo.png",
-    "link": "https://pushe.co/"
+    "linkText": "Visit Pushe",
+    "linkUrl": "https://pushe.co/",
+    "tags": ["sdk", "android", "ios", "flutter", "reactNative", "unity", "cordova"]
   }
 ]
