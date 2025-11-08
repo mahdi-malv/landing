@@ -1,0 +1,113 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import projects from '../data/projects.json';
+---
+
+<Layout title="Mahdi Malvandi - Software Developer">
+  <main class="main-wrapper">
+    <header>
+      <h1>Mahdi Malvandi</h1>
+      <p>Software Developer</p>
+    </header>
+    
+    <section class="bio">
+      <p>Hi. I'm Mahdi Malvandi, software developer living in Copenhagen, Denmark. I've been focusing on Android applications throughout the recent years.</p>
+    </section>
+    
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        {projects.map((project) => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
+    </section>
+    
+    <section class="contact">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:hi@mahdi-malv.com">Email</a>
+        <!-- LinkedIn link can be added here later -->
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Main wrapper styling is now handled in Layout.astro */
+  
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    color: #1f2937;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  .bio {
+    margin-bottom: 3rem;
+  }
+  
+  .bio p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4b5563;
+  }
+  
+  .projects {
+    margin: 3rem 0;
+  }
+  
+  .projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact {
+    margin-top: 3rem;
+  }
+  
+  .contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .contact-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .contact-links a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid #3b82f6;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+  }
+  
+  .contact-links a:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+</style>

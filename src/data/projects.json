@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Android Task Manager",
+    "description": "A comprehensive task management app built with modern Android architecture components, featuring offline support and synchronization.",
+    "imageUrl": "/images/android-task-manager.png",
+    "link": "https://github.com/yourusername/android-task-manager"
+  },
+  {
+    "title": "Weather Forecast App",
+    "description": "Clean and intuitive weather application using Material Design principles, integrated with real-time weather APIs.",
+    "imageUrl": "/images/weather-app.png",
+    "link": "https://github.com/yourusername/weather-forecast-app"
+  },
+  {
+    "title": "Fitness Tracker",
+    "description": "Android fitness tracking application with data visualization, workout planning, and progress monitoring features.",
+    "imageUrl": "/images/fitness-tracker.png",
+    "link": "https://github.com/yourusername/fitness-tracker"
+  }
+]
