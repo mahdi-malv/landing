@@ -1,20 +1,32 @@
 [
   {
-    "title": "Android Task Manager",
-    "description": "A comprehensive task management app built with modern Android architecture components, featuring offline support and synchronization.",
-    "imageUrl": "/images/android-task-manager.png",
-    "link": "https://github.com/yourusername/android-task-manager"
+    "title": "Snevagten",
+    "description": "Android (and iOS) application for Snow removal partners of Snevagten operating in Denmark.",
+    "imageUrl": "/images/snevagten-logo.png",
+    "link": "https://play.google.com/store/apps/details?id=dk.snevagten.mobile&hl=en"
   },
   {
-    "title": "Weather Forecast App",
-    "description": "Clean and intuitive weather application using Material Design principles, integrated with real-time weather APIs.",
-    "imageUrl": "/images/weather-app.png",
-    "link": "https://github.com/yourusername/weather-forecast-app"
+    "title": "OK",
+    "description": "OK App. The main application for the OK, Tank or betale platform.",
+    "imageUrl": "/images/ok-logo.png",
+    "link": "https://play.google.com/store/apps/details?id=dk.ok.android.findtank&hl=en"
   },
   {
-    "title": "Fitness Tracker",
-    "description": "Android fitness tracking application with data visualization, workout planning, and progress monitoring features.",
-    "imageUrl": "/images/fitness-tracker.png",
-    "link": "https://github.com/yourusername/fitness-tracker"
+    "title": "coto",
+    "description": "coto provides live streaming led real-time consultations in Tarot, Astrology, relationships, mental health, emotional wellness, and Energy-based healing, creating a safe and supportive space for individuals, especially women, to find immediate and long-term support.",
+    "imageUrl": "/images/coto.png",
+    "link": "https://play.google.com/store/apps/details?id=world.eve.coto&hl=en"
+  },
+  {
+    "title": "TapsellPlus SDK",
+    "description": "Tapsell ",
+    "imageUrl": "/images/tapsell-logo.png",
+    "link": "https://tapsell.com/"
+  },
+  {
+    "title": "Pushe SDK",
+    "description": "Pushe notification service for Android and iOS.",
+    "imageUrl": "/images/pushe-logo.png",
+    "link": "https://pushe.co/"
   }
 ]
