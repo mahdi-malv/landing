@@ -14,14 +14,6 @@ This is the portfolio website for Mahdi Malvandi, an Android Software Developer 
 - [Astro](https://astro.build/) - Static site generator
 - HTML/CSS - Styling and layout
 
-## Projects Featured
-
-- **Snevagten** - Partner app for salting and snow removal
-- **OK** - Fuel, wash, park, and charge app for Denmark
-- **coto** - Live streaming platform for consultations
-- **TapsellPlus SDK** - Mobile ad mediation SDK
-- **Pushe SDK** - Push notifications and analytics SDK
-
 ## Getting Started
 
 ### Prerequisites
