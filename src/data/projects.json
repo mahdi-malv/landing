@@ -1,7 +1,7 @@
 [
   {
     "title": "Snevagten",
-    "description": "Android (and iOS) application for Snow removal partners of Snevagten operating in Denmark.",
+    "description": "The Snevagten Partner App makes the work of salting and snow removal in winter easy, fast and safe. The app collects everything you need on the go - so you can focus on your work and complete tasks.",
     "imageUrl": "/images/snevagten-logo.png",
     "linkText": "View on Play Store",
     "linkUrl": "https://play.google.com/store/apps/details?id=dk.snevagten.mobile&hl=en",
@@ -9,7 +9,7 @@
   },
   {
     "title": "OK",
-    "description": "OK App. The main application for the OK, Tank or betale platform.",
+    "description": "The OK app lets you refuel, wash, park, and charge your car anywhere in Denmark, pay easily, earn Coop bonuses, and manage everything from your phone.",
     "imageUrl": "/images/ok-logo.png",
     "linkText": "View on Play Store",
     "linkUrl": "https://play.google.com/store/apps/details?id=dk.ok.android.findtank&hl=en",
@@ -25,7 +25,7 @@
   },
   {
     "title": "TapsellPlus SDK",
-    "description": "Tapsell advertising SDK for mobile applications.",
+    "description": "Tapsell.org’s SDK lets developers add and manage ads in mobile apps, using its own and other ad networks through mediation to boost revenue with minimal setup.",
     "imageUrl": "/images/tapsell-logo.png",
     "linkText": "Visit Tapsell",
     "linkUrl": "https://tapsell.com/",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Pushe SDK",
-    "description": "Pushe notification service for Android and iOS.",
+    "description": "The Pushe Android SDK adds push notifications, in-app messaging, and analytics to your app with support for both Google and Huawei devices.",
     "imageUrl": "/images/pushe-logo.png",
     "linkText": "Visit Pushe",
     "linkUrl": "https://pushe.co/",
