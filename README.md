@@ -1,7 +1,7 @@
 > Generated
 # Mahdi Malvandi - Portfolio
 
-<img src="https://img.shields.io/badge/Preview%20on%20left%20side-mahdi--malv.com-blue?style=flat&labelColor=000000" alt="Preview:mahdi-malv.com" />
+<a href="https://mahdi-malv.com"><img src="https://img.shields.io/badge/Preview-mahdi--malv.com-blue?style=flat&labelColor=000000" alt="Preview:mahdi-malv.com" /></a>
 
 A personal portfolio website showcasing Android development projects and experience.
 
